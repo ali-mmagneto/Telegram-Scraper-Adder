@@ -40,7 +40,7 @@ if not client.is_user_authorized():
     client.send_code_request(phone)
     os.system('clear')
     banner()
-    client.sign_in(phone, input(gr+'[+] Enter the code: '+re))
+    client.sign_in(phone, input(gr+'[+] Enter the code:'+re))
  
 os.system('clear')
 banner()
@@ -72,7 +72,7 @@ for g in groups:
     i+=1
  
 print('')
-g_index = input(gr+"[+] Enter a Number : "+re)
+g_index = input(gr+"[+] Enter a Number :"+re)
 target_group=groups[int(g_index)]
  
 print(gr+'[+] Fetching Members...')
